@@ -1,5 +1,0 @@
-.ratio-the-md-16x9 {
-  @include media-breakpoint-only(md) {
-    --bs-aspect-ratio: calc(9 / 16 * 100%);
-  }
-}

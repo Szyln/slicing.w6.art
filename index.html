@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXHIBINECTION</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- bs icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
+
+    <!-- aos -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+    
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar-brand -->
+          <a class="navbar-brand text-primary mx-auto" href="#">EXHIBINECTION</a>
+          <!-- 結帳 -->
+          <a class="d-flex text-dark position-relative order-lg-1" href="#">
+            <span class="material-icons">
+              confirmation_number
+            </span>
+            <span class="badge rounded-pill bg-secondary position-absolute top-0 start-100 translate-middle">3</span>
+          </a>
+          <!-- navbar-collapse -->
+          <div class="collapse navbar-collapse flex-grow-0 " id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link p-4 active" aria-current="page" href="#">Sign in</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link p-4" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+    <!-- banner -->
+<section class="bg-banner text-white d-flex align-items-end align-items-md-center pb-20 pb-md-0 ">
+  <div class="container">
+    <div class="row gx-2">
+      <div class="col-12 mb-4 offset-md-1">
+        <h2 class="fs-2 fw-bold mb-2">台北當代藝術展</h2>
+        <h3 class="fs-5 fw-bold">01 JUN - 31 OCT</h3>
+      </div>
+      <div class="col col-md-2 offset-md-1">
+        <button type="button" class="btn btn-secondary fs-6 w-100">購買票券</button>
+      </div>
+      <div class="col col-md-2">
+        <button type="button" class="btn btn-outline-light fs-6 w-100 ">詳細資訊</button>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<nav class="border-top border-bottom border-1 border-medium-dark overflow-hidden ">
+  <!-- 
+  ul 用 pb-2 將 scrollbar 推下去，
+  再用負的 mb-n2 
+  將 pb-2 抵消藏起來 
+-->
+  <!-- 
+    這裡放 jusitify-content-center 在窄螢幕會有問題
+    scroll 沒辦法滾到第一項目
+    查到兩種作法
+    1. 使用 margin: auto 做推擠
+    *2. justify-content: safe center （*目前看起來只有 firefox 有用）
+  -->
+  <ul class="list-unstyled d-flex text-nowrap flex-nowrap overflow-auto pb-2 mb-n2">
+    <li class="ms-auto">
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">音樂</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">戲劇</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="../designExhibition.html">設計</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">藝術</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">美食</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">旅遊</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">電影</a>
+    </li>
+    <li>
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">親子</a>
+    </li>
+    <li class="me-auto">
+      <a class="d-block px-6 py-4 link-medium-dark link-hover-border-bottom" href="#">期間限定</a>
+    </li>
+
+  </ul>
+</nav>
+
+    <!-- grid -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-1 border border-4">
+      col-1
+    </div>
+    <div class="col-6 border border-4">
+      col-6
+    </div>
+  </div>
+</div> -->
+
+<!-- sortNav -->
+<!-- 熱門特展 -->
+<section class="container-lg">
+  <h2 class="mb-6 mt-15 fs-2 fw-bold">熱門特展</h2>
+  <ul class="row row-cols-1 list-unstyled gx-lg-0">
+    <li class="col py-6 py-lg-0 mb-4 mb-md-5 bg-light-gray">
+      <div class="card bg-light-gray">
+        <div class="row g-0">
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-1x1 ratio-the-md-16x9">
+              <img class="img-cover" src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-6 pt-0 pt-lg-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title fs-5 fw-bold mb-1">2020 台味設計展</h3>
+                <a class="ms-2 d-md-none" href="#">
+                  <i class="bi bi-facebook link-dark fs-4"></i>
+                </a>
+                <p class="d-md-none fw-bold ms-auto">01 JUN — 31 OCT</p>
+              </div>
+              <p class="fs-5 mb-2">$350</p>
+              <p class="card-text fs-6 fs-md-5 mb-5 mb-xl-13 fw-medium">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+              <button type="button" class="btn btn-primary">購買票券</button>
+              <button type="button" class="btn btn-outline-primary">收藏展覽</button>
+            </div>
+          </div>
+          <div class="col-md-1 offset-md-1 py-2 py-lg-10 d-none d-md-block ">
+            <div class="card-footer bg-light-gray h-100 d-flex flex-column justify-content-between">
+              <h4 class="card-title fs-5 fw-bold mb-1 lh-base text-nowrap ">01<br>JUN<br>|<br>31<br>OCT</h4>
+              <a href="#">
+                <i class="bi bi-facebook link-dark fs-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col py-6 py-lg-0 mb-4 mb-md-5 bg-light-gray">
+      <div class="card bg-light-gray">
+        <div class="row g-0">
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-1x1 ratio-the-md-16x9">
+              <img class="img-cover" src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-6 pt-0 pt-lg-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title fs-5 fw-bold mb-1">2020 台味設計展</h3>
+                <a class="ms-2 d-md-none" href="#">
+                  <i class="bi bi-facebook link-dark fs-4"></i>
+                </a>
+                <p class="d-md-none fw-bold ms-auto">01 JUN — 31 OCT</p>
+              </div>
+              <p class="fs-5 mb-2">$350</p>
+              <p class="card-text fs-6 fs-md-5 mb-5 mb-xl-13 fw-medium">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+              <button type="button" class="btn btn-primary">購買票券</button>
+              <button type="button" class="btn btn-outline-primary">收藏展覽</button>
+            </div>
+          </div>
+          <div class="col-md-1 offset-md-1 py-2 py-lg-10 d-none d-md-block ">
+            <div class="card-footer bg-light-gray h-100 d-flex flex-column justify-content-between">
+              <h4 class="card-title fs-5 fw-bold mb-1 lh-base text-nowrap ">01<br>JUN<br>|<br>31<br>OCT</h4>
+              <a href="#">
+                <i class="bi bi-facebook link-dark fs-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+       <li class="col py-6 py-lg-0 mb-4 mb-md-5 bg-light-gray">
+      <div class="card bg-light-gray">
+        <div class="row g-0">
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-1x1 ratio-the-md-16x9">
+              <img class="img-cover" src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-6 pt-0 pt-lg-10">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <h3 class="card-title fs-5 fw-bold mb-1">2020 台味設計展</h3>
+                <a class="ms-2 d-md-none" href="#">
+                  <i class="bi bi-facebook link-dark fs-4"></i>
+                </a>
+                <p class="d-md-none fw-bold ms-auto">01 JUN — 31 OCT</p>
+              </div>
+              <p class="fs-5 mb-2">$350</p>
+              <p class="card-text fs-6 fs-md-5 mb-5 mb-xl-13 fw-medium">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+              <button type="button" class="btn btn-primary">購買票券</button>
+              <button type="button" class="btn btn-outline-primary">收藏展覽</button>
+            </div>
+          </div>
+          <div class="col-md-1 offset-md-1 py-2 py-lg-10 d-none d-md-block ">
+            <div class="card-footer bg-light-gray h-100 d-flex flex-column justify-content-between">
+              <h4 class="card-title fs-5 fw-bold mb-1 lh-base text-nowrap ">01<br>JUN<br>|<br>31<br>OCT</h4>
+              <a href="#">
+                <i class="bi bi-facebook link-dark fs-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- 直播回顧 -->
+<section class="container-lg">
+  <h2 class="mb-6 mt-15 fs-2 fw-bold">直播回顧</h2>
+  <div class="card text-white row gx-0">
+    <img src="https://images.unsplash.com/photo-1532618448574-fa71ec0b6df4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGV4aGliaXRpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img h-stream" alt="...">
+    <div class="card-img-overlay bg-overlay col-lg-5 py-10 ps-6 pe-md-6">
+      <h3 class="card-title fs-3 fw-bold mb-8">
+        開幕對談｜
+        <span class="fw-medium">藝術展演巡禮</span>
+      </h3>
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="img-cover hw-stream-profile mb-3" alt="">
+      <p class="fs-5 mb-2">臺北現代聯合總監｜Ken Hsu</p>
+      <p class="card-text fs-5 mb-4 fw-light">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+      <button type="button" class="btn btn-secondary col-4">點此觀看</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 猜你也喜歡 -->
+<section class="container mb-6 mb-md-15 ">
+  <h2 class="mb-6 mt-15 fs-2 fw-bold">猜你也喜歡…</h2>
+  <div class="row">
+    <div class="col-12 col-md-11 offset-md-1">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="bg-subscribe bg-dark text-white d-flex align-items-end">
+  <div class="container pb-9">
+    <form action="submit" class="">
+      <p class="fs-2 fw-medium mb-3">
+        想收到最新消息嗎？<br>快訂閱我們！
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="輸入您的電子信箱" aria-label="user email" aria-describedby="subscribe">
+            <button class="btn btn-lg btn-secondary px-13" type="button" id="subscribe">訂閱</button>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+</div>
+    <footer class="footer">
+      <nav class="navbar navbar-light bg-white">
+        <div class="container align-items-center ">
+          <!-- navbar-brand -->
+          <a class="navbar-brand text-dark" href="#">EXHIBINECTION</a>
+          <small class="me-auto">© 2020. All Rights Reserved.</small>
+          <!-- navbar-collapse -->
+          <div>
+            <ul class="list-unstyled mb-0 text-dark d-none d-md-flex">
+              <li class="">
+                <a class="nav-link p-4  text-medium-dark" href="#">Sign in</a>
+              </li>
+              <li class="">
+                <a class="nav-link  text-medium-dark p-4" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>
