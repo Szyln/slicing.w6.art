@@ -1,3 +1,8 @@
+@import "background";
+@import "ratio";
+@import "sizing";
+@import "font";
+
 .link-hover-border-bottom {
   position: relative;
   &::before {
@@ -20,16 +25,16 @@
 }
 
 .img-cover {
-  object-fit: cover;
+object-fit: cover;
 }
 
 
 // @each $key, $value in $columns {
-  // @include media-breakpoint-up(md) {
-  //   .gx-#{key} {
-      
-  //   }
-  // }
+// @include media-breakpoint-up(md) {
+//   .gx-#{key} {
+    
+//   }
+// }
 //   .col-#{$key} {
 
 //   }

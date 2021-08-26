@@ -30,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- navbar-brand -->
-          <a class="navbar-brand text-primary mx-auto" href="#">EXHIBINECTION</a>
+          <a class="navbar-brand text-primary mx-auto" href="/">EXHIBINECTION</a>
           <!-- 結帳 -->
           <a class="d-flex text-dark position-relative order-lg-1" href="#">
             <span class="material-icons">
@@ -52,13 +52,15 @@
           
         </div>
       </nav>
+      <%- include('partial/banner.ejs') %>
+      <%- include('partial/sortNav.ejs') %>
     </header>
-    <%- include('partial/banner.ejs') %>
-    <%- include('partial/sortNav.ejs') %>
-    <%- contents %>
+    <main>
+      <%- contents %>
+      <%- include('partial/guessYouMayLike.ejs') %>
+      <%- include('partial/subscribe.ejs') %>
+    </main>
 
-    <%- include('partial/guessYouMayLike.ejs') %>
-    <%- include('partial/subscribe.ejs') %>
     <footer class="footer">
       <nav class="navbar navbar-light bg-white">
         <div class="container align-items-center ">

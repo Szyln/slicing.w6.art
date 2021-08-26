@@ -7,18 +7,10 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "./helpers/variablesConfig";
+@import "./helpers/utilitiesAPI";
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "vendors/swiper";
 
-@import "./helpers/utilties";
-@import "./helpers/background";
-@import "./helpers/ratio";
-@import "./helpers/sizing";
-@import "./helpers/font";
-
-// @import "./helpers/color";
-
-
-// @import "./layout/index";
+@import "./helpers/utilities";
